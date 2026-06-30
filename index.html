@@ -1,128 +1,177 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!DOCTYPE html>
-
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```
-<title>Discover Suana Village</title>
+    <title>Discover Suana Village</title>
 
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-```
-<section class="hero">
+    <!-- ================= NAVBAR ================= -->
 
-    <video autoplay muted loop playsinline>
-        <source src="assets/video/hero.mp4" type="video/mp4">
-    </video>
+    <header class="navbar">
 
-    <div class="overlay"></div>
+    <div class="nav-logo">
+        Discover Suana
+    </div>
 
-    <div class="hero-content">
+    <nav>
 
-        <img
-            src="assets/images/logo-suana.png"
-            alt="Suana Village Logo"
-            class="hero-logo"
-        >
+        <a href="#">Home</a>
 
-        <h1>Discover Suana Village</h1>
+        <a href="#destinasi">Attractions</a>
+
+    </nav>
+
+</header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <video autoplay muted loop playsinline>
+            <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <img
+                src="assets/images/logo-suana.png"
+                alt="Suana Village Logo"
+                class="hero-logo">
+
+            <h1>Discover Suana Village</h1>
+
+            <p>
+                Explore the natural beauty, cultural heritage,
+                and hidden gems of Nusa Penida.
+            </p>
+
+            <a href="#destinasi">
+                Explore Destinations
+            </a>
+
+        </div>
+
+        <div class="video-credit">
+            Video Courtesy: Kantor Camat Nusa Penida (YouTube)
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about reveal">
+
+        <h2>About Suana Village</h2>
 
         <p>
-            Explore the natural beauty, cultural heritage,
-            and hidden gems of Nusa Penida.
+            Suana Village is one of the most beautiful destinations on Nusa Penida Island, offering breathtaking coastal landscapes, cultural heritage, sacred temples, and unforgettable travel experiences surrounded by nature.
         </p>
 
-        <a href="#destinasi">
-            Explore Destinations
-        </a>
+    </section>
 
-    </div>
+    <!-- ================= DESTINATIONS ================= -->
 
-    <div class="video-credit">
-        Video Courtesy: Kantor Camat Nusa Penida (YouTube)
-    </div>
+    <section id="destinasi">
 
-</section>
+        <h2 class="reveal">
+            Explore Suana's Attractions
+        </h2>
 
-<section class="about reveal">
+        <div id="wisata-container"></div>
 
-    <h2>About Suana Village</h2>
+    </section>
 
-    <p class="reveal">
-        Suana Village is one of the most beautiful areas on
-        Nusa Penida Island, offering stunning beaches,
-        breathtaking cliffs, rich cultural heritage,
-        and unforgettable travel experiences.
-    </p>
+    <!-- ================= CULINARY ================= -->
 
-</section>
+    <section id="culinary">
 
-<section id="destinasi">
+        <h2 class="reveal">
+            Culinary Experiences
+        </h2>
 
-    <h2 class="reveal">
-        Explore Suana's Attractions
-    </h2>
+        <div id="kuliner-container">
 
-    <div id="wisata-container"></div>
+            <!-- nanti isi card kuliner -->
 
-</section>
+        </div>
 
-<div id="modal">
+    </section>
 
-    <div class="modal-content">
+    <!-- ================= GALLERY ================= -->
 
-        <span id="close-btn">&times;</span>
+    <section id="gallery">
 
-        <img id="modal-image" alt="Destination">
+        <h2 class="reveal">
+            Photo Gallery
+        </h2>
 
-        <div class="modal-body">
+        <div class="gallery-container">
 
-            <h2 id="modal-title"></h2>
+            <!-- nanti isi gallery -->
 
-            <p id="modal-description"></p>
+        </div>
 
-            <a id="maps-link" target="_blank">
-                📍 Open in Google Maps
-            </a>
+    </section>
+
+    <!-- ================= MODAL ================= -->
+
+    <div id="modal">
+
+        <div class="modal-content">
+
+            <span id="close-btn">&times;</span>
+
+            <img
+                id="modal-image"
+                alt="Destination">
+
+            <div class="modal-body">
+
+                <h2 id="modal-title"></h2>
+
+                <p id="modal-description"></p>
+
+                <a
+                    id="maps-link"
+                    target="_blank">
+
+                    📍 Open in Google Maps
+
+                </a>
+
+            </div>
 
         </div>
 
     </div>
 
-</div>
+    <!-- ================= FOOTER ================= -->
 
-<nav class="bottom-nav">
+    <footer>
 
-    <a href="#">
-        🏠
-    </a>
+        <p>
+            © 2026 Discover Suana Village • Nusa Penida, Bali
+        </p>
 
-    <a href="#destinasi">
-        📍
-    </a>
+    </footer>
 
-</nav>
-
-<script src="data/destinasi.js"></script>
-<script src="js/wisata.js"></script>
-<script src="js/app.js"></script>
-
+    <script src="data/destinasi.js"></script>
+    <script src="js/wisata.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
+
 </html>

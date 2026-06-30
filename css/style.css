@@ -368,27 +368,156 @@ body::after{
         scale(1);
 }
 
-/* BOTTOM NAV */
+/* ===========================
+   NAVBAR
+=========================== */
 
-.bottom-nav{
+.navbar{
+
     position:fixed;
-    bottom:0;
+
+    top:0;
     left:0;
+
     width:100%;
-    background:white;
+
+    padding:22px 70px;
+
     display:flex;
-    justify-content:space-around;
-    padding:15px;
-    z-index:100;
-    box-shadow:
-        0 -5px 15px rgba(
-            0,0,0,.08
-        );
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:9999;
+
+    transition:.4s ease;
+
 }
 
-.bottom-nav a{
-    text-decoration:none;
+.navbar.scrolled{
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.nav-logo{
+
+    color:#fff;
+
     font-size:1.5rem;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    transition:.4s;
+
+}
+
+.navbar nav{
+
+    display:flex;
+
+    gap:40px;
+
+}
+
+.navbar nav a{
+
+    position:relative;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.navbar nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#4fd1c5;
+
+    transition:.3s;
+
+}
+
+.navbar nav a:hover{
+
+    color:#4fd1c5;
+
+}
+
+.navbar nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* Saat Scroll */
+
+.navbar.scrolled .nav-logo{
+
+    color:#0f172a;
+
+}
+
+.navbar.scrolled nav a{
+
+    color:#334155;
+
+}
+
+.navbar.scrolled nav a:hover{
+
+    color:#0f766e;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        padding:18px 22px;
+
+    }
+
+    .nav-logo{
+
+        font-size:1.2rem;
+
+    }
+
+    .navbar nav{
+
+        gap:20px;
+
+    }
+
+    .navbar nav a{
+
+        font-size:.9rem;
+
+    }
+
 }
 
 /* ANIMATION */
