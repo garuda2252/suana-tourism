@@ -4,7 +4,7 @@ const destinasi = [
 {
     nama: "Goa Giri Putri Temple",
     lokasi: "Suana Village, Nusa Penida",
-    gambar: "assets/images/goa-giri-putri.jpg",
+    gambar: "assets/images/giri-putri.webp",
     deskripsi: "A sacred temple located inside a massive limestone cave, offering a unique spiritual experience and one of the most remarkable cultural attractions in Nusa Penida.",
     maps: "https://maps.app.goo.gl/fqXTqmD6mSunuQsd7"
 },
